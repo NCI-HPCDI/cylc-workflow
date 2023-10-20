@@ -72,12 +72,13 @@ module use /g/data/hr22/modulefiles
 module load cylc7/23.09
 ```
 
-## Step 3: execute the inilization step
+## Step 3: execute the inilization step ( once only)
 
 ```
 /g/data/hr22/bin/gadi-cylc-setup-ps
 ```
-After it, check whether the following 3 files are created under ~/.ssh directory
+
+After it, check the existence of the following 3 files under ~/.ssh directory
 
 ```
 id_rsa-rose-cylc-gadi

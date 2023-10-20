@@ -25,19 +25,33 @@ module use /g/data/hr22/modulefiles
 module load cylc8/8.2.1
 ```
 
-## Step 3: verify your MOSRS account information
+## Step 3: execute the inilization step ( if you haven't run it)
+
+```
+/g/data/hr22/bin/gadi-cylc-setup-ps
+```
+
+After it, check the existence of the following 3 files under ~/.ssh directory
+
+```
+id_rsa-rose-cylc-gadi
+id_rsa-rose-cylc-gadi-restricted.pub
+id_rsa-rose-cylc-gadi.pub
+```
+
+## Step 4: verify your MOSRS account information
 
 ```
 mosrs-auth
 ```
 
-## Step 4: checkout the test suite u-da543
+## Step 5: checkout the test suite u-da543
 
 ```
  rosie co u-cz535
 ```
 
-## Step 5: execute suite u-da543
+## Step 6: execute suite u-da543
 
 ```
 cd ~/roses/u-cz535
@@ -50,6 +64,12 @@ Make sure all jobs can complete successfully.
 ## Step 6: Monitor the job progress
 
 You can only monitor the cylc8 workflow via an ARE VDI session.
+
+Run the following command and open a web browser window
+
+```
+cylc gui
+```
 
 
 
