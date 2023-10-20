@@ -4,6 +4,12 @@ The file aims to set up your working environment at NCI Gadi to run Clyc7 workfl
 
 # Verify suite localhost mode
 
+Make sure you alreay have at least one persistent session running. You can list all running persistent session via the command
+
+```
+persistent-sessions list
+```
+
 ## Step 1: ssh to your alive persistent session.
 ```
 ssh -X gadi.nci.org.au
