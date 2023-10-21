@@ -31,7 +31,7 @@ module load cylc8/8.2.1
 ## Step 3: execute the inilization step ( if you didn't run it)
 
 ```
-/g/data/hr22/bin/gadi-cylc-setup-ps
+/g/data/hr22/bin/gadi-cylc-setup-ps -y
 ```
 
 After it, check the existence of the following 3 files under ~/.ssh directory
