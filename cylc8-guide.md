@@ -28,7 +28,7 @@ module use /g/data/hr22/modulefiles
 module load cylc8/8.2.1
 ```
 
-## Step 3: execute the inilization step ( if you haven't run it)
+## Step 3: execute the inilization step ( if you didn't run it)
 
 ```
 /g/data/hr22/bin/gadi-cylc-setup-ps
