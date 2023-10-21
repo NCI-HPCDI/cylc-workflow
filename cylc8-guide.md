@@ -14,6 +14,9 @@ persistent-sessions list
 
 You could initilize the cylc8 workflow from Gadi login node, persistent session or a ARE VDI session. It is recommanded to open an ARE VDI session in this excise to run and monitor the cylc8 workflow.
 
+Please following https://opus.nci.org.au/display/DAE/ARE+VDI+Sessions+for+Cylc+Jobs to start an ARE VDI session.
+
+
 ## Step 2: load the module
 
 Specify the persistent session name via the environemnt varialbe CYLC_SESSION environment variable or put it in the file  ~/.persistent-sessions/cylc-session
