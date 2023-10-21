@@ -64,7 +64,7 @@ cylc play u-cz535
 
 Make sure all jobs can complete successfully.
 
-## Step 6: Monitor the job progress
+## Step 7: Monitor the job progress
 
 You can only monitor the cylc8 workflow via an ARE VDI session.
 
