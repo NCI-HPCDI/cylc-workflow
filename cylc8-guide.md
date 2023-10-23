@@ -30,7 +30,7 @@ Then load the module as below
 
 ```
 module use /g/data/hr22/modulefiles
-module load cylc8/8.2.1
+module load cylc/8.2.1
 ```
 
 ## Step 3: execute the initialization step ( if you didn't run it)
