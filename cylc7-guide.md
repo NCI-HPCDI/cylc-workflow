@@ -50,8 +50,12 @@ Now you can check out the test suite u-da543 using the 'rosie co' command
 ```
  rosie co u-da543
 ```
-The suite includes both Cylc7 localhost mode and accessdev compatible mode.
 
+The suite offers two modes: Cylc7 localhost mode and Accessdev compatible mode for running the following tasks:
+1. Cloning the source code of 'stream' using the 'background' batch system on the 'localhost' host (localhost mode).
+2. Building the 'stream' package with the 'pbs' batch system on the 'localhost' host (localhost mode).
+3. Executing the 'stream' package with the 'pbs' batch system on the 'gadi' host (Accessdev compatible mode).
+ 
 ## Step 5: execute suite u-da543
 
 The suite will be located at ~/roses/u-da543. You can execute it using the 'rose suite-run' command.
