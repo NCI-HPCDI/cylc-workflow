@@ -52,6 +52,7 @@ Now you can check out the test suite u-da543 using the 'rosie co' command
 ```
 
 The suite offers two modes: Cylc7 localhost mode and Accessdev compatible mode for running the following tasks:
+
 1. Cloning the source code of 'stream' using the 'background' batch system on the 'localhost' host (localhost mode).
 2. Building the 'stream' package with the 'pbs' batch system on the 'localhost' host (localhost mode).
 3. Executing the 'stream' package with the 'pbs' batch system on the 'gadi' host (Accessdev compatible mode).
