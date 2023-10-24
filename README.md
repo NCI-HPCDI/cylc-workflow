@@ -1,2 +1,2 @@
 # cylc-workflow
-Guidelines for Running a Cylc Workflow on the NCI Platform.
+Guidelines for running a Cylc Workflow on the NCI Platform.
