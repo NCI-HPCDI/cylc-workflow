@@ -123,7 +123,7 @@ You only need to execute the initialization step provided above once.
 
 This initialization step is not required if you are running a Cylc7 suite in localhost mode.
 
-# Step 4: verify your MOSRS account information
+## Step 4: verify your MOSRS account information
 
 To enable access to the MOSRS, please execute the following command
 
@@ -131,7 +131,7 @@ To enable access to the MOSRS, please execute the following command
 mosrs-auth
 ```
 
-## Step 4: checkout the test suite u-da543 if you haven't done it.
+## Step 5: checkout the test suite u-da543 if you haven't done it.
 
 You can now check out the 'u-da543' test suite using the 'rosie co' command if the suite does not already exist.
 
@@ -139,7 +139,7 @@ You can now check out the 'u-da543' test suite using the 'rosie co' command if t
  rosie co u-da543
 ```
 
-## Step 5: execute suite u-da543
+## Step 6: execute suite u-da543
 
 The suite will be stored in the directory ~/roses/u-da543. You can execute it using the 'rose suite-run' command. Prior to initiating a new run, ensure you clean it by using the 'rose suite-clean' command.
 
