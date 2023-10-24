@@ -23,7 +23,7 @@ Please refer to https://opus.nci.org.au/display/DAE/ARE+VDI+Sessions+for+Cylc+Jo
 
 Make sure you fill in the same default PROJECT id in the "Project" field. 
 
-For example, if your default project id is "fp0", you should fill "fp0" in the "Project" field and fill in "gdata/ki32+gdata/hr22+gdata/fp0+gdata/access+gdata/fp0+scratch/fp0" in the "Storage" field.
+For example, if your default project id is "fp0", you should fill ```fp0``` in the "Project" field and fill ```gdata/ki32+gdata/hr22+gdata/fp0+gdata/access+gdata/fp0+scratch/fp0``` in the "Storage" field.
 
 ## Step 2: load the module
 
