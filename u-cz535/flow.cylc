@@ -8,7 +8,6 @@
     [[root]]
         [[[environment]]]
             STREAM_ROOT=$CYLC_SUITE_SHARE_DIR/stream
-	    PROJECTCODE = fp0
     [[local]]
         inherit = root
 	platform = localhost
@@ -17,11 +16,11 @@
 	platform = pbs
         [[[directives]]]
             # project code that is billed for CPU hours
-            -P = fp0
+            -P = {{environ['PROJECT']}}
             # job spec (must be all in one line)
             # make sure you include storage=gdata/hr22 (for rose/cylc apps)
             # and any other project codes you use
-            -l = "walltime=00:10:00,ncpus=1,mem=1gb,storage=gdata/hr22+gdata/pp66+gdata/fp0+scratch/fp0"
+            -l = "walltime=00:10:00,ncpus=1,mem=1gb,storage=gdata/hr22+gdata/ki32+gdata/{{environ['PROJECT']}}+scratch/{{environ['PROJECT']}}"	    
             # queue to submit jobs to.  Note any tasks requiring external network
             # access can override this to copyq
             -q = "normal"
