@@ -1,0 +1,52 @@
+#!Jinja2
+[scheduling]
+   [[graph]]
+       R1 = """
+          get_stream => build_stream => run_stream
+        """
+[runtime]
+    [[root]]
+        [[[environment]]]
+            STREAM_ROOT=$CYLC_SUITE_SHARE_DIR/stream
+	    PROJECTCODE = fp0
+    [[local]]
+        inherit = root
+	platform = localhost
+    [[HPC]]
+        inherit = root
+	platform = pbs
+        [[[directives]]]
+            # project code that is billed for CPU hours
+            -P = fp0
+            # job spec (must be all in one line)
+            # make sure you include storage=gdata/hr22 (for rose/cylc apps)
+            # and any other project codes you use
+            -l = "walltime=00:10:00,ncpus=1,mem=1gb,storage=gdata/hr22+gdata/pp66+gdata/fp0+scratch/fp0"
+            # queue to submit jobs to.  Note any tasks requiring external network
+            # access can override this to copyq
+            -q = "normal"
+    [[get_stream]]
+        inherit = local
+        script = '''
+            if [ -e $STREAM_ROOT ]; then
+                echo "WARNING: STREAM_ROOT already exists, removing it ($STREAM_ROOT)"
+                rm -rf $STREAM_ROOT
+            fi
+	    hostname
+            echo "Creating: $STREAM_ROOT"
+            mkdir -p $STREAM_ROOT
+            cd $STREAM_ROOT
+            get_stream
+            '''
+    [[build_stream]]
+        inherit = HPC
+        script = '''
+            cd $STREAM_ROOT/STREAM
+            build_stream
+            '''
+    [[run_stream]]
+        inherit = HPC
+        script = '''
+            cd $STREAM_ROOT/STREAM
+            run_stream
+            '''
