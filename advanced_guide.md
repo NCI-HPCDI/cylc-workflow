@@ -1,6 +1,6 @@
 # Change deault cylc7 working directory in  ~/.metomi/rose.conf
 
-For example, the following config will link ~/cylc-run towards /g/data and link the 'share' and 'work' subdirectoroies towards '/scratch'
+For example, the following config will link ~/cylc-run towards /g/data and link the 'share' and 'work' subdirectories towards '/scratch'
 
 ```
 [rose-suite-run]
@@ -10,7 +10,7 @@ root-dir{work}=*=/scratch/$PROJECT/$USER
 ```
 # Change deault cylc8 working directory in ~/.cylc/flow/global.cylc
 
-For example, the following config will link 'log' subdirctory to '/g/data' and link the 'share' and 'work' subdirectoroies towards '/scratch'
+For example, the following config will link 'log' subdirctory to '/g/data' and link the 'share' and 'work' subdirectories towards '/scratch'
 
 ```
 #!Jinja2
