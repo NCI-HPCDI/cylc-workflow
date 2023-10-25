@@ -63,7 +63,7 @@ The suite will be located at ~/roses/u-da543. You can execute it using the 'rose
 
 ```
 cd ~/roses/u-da543
-rose site-run
+rose suite-run
 ```
 A GUI window will appear to display the workflow's progress. Ensure that all jobs can successfully complete.
 
