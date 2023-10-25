@@ -75,7 +75,7 @@ You can exit the persistent session, but please do not terminate it as we will u
 
 ## Step 1: ssh to Gadi login node.
 
-Ensure that you are on the Gadi login node and that X11 is enabled.
+Ensure that you are on the Gadi login node and X11 is enabled.
 
 Alternatively, you can initiate a new SSH login using the following command.
 
