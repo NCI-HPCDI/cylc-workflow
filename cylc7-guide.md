@@ -112,12 +112,37 @@ module load cylc7/23.09
 
 It should display a message such as 'Using the cylc session cylc.ab11.abc111.ps.nci.org.au' to indicate the specific persistent session it will utilize.
 
-## Step 3: execute the initialization step ( once only)
+## Step 3: verify your MOSRS account information
+
+To enable access to the MOSRS, please execute the following command
+
+```
+mosrs-auth
+```
+
+## Step 4: run the suite u-da543 (check it out if it doesn't exist)
+
+Run the following command to check out the suite if it does not already exist.
+
+```
+ rosie co u-da543
+```
+
+Now try to run the suite as below
+
+```
+cd ~/roses/u-da543
+rose suite-clean
+rose site-run
+```
+The suite can not start as it needs an extra step to run the "accessdev-compatible" mode, i.e. job with 'hosts=gadi', from the Gadi login node.    
+
+## Step 5: execute the initialization step ( once only)
 
 To run a Cylc7 suite in 'Accessdev compatible' mode, you should execute the following initialization script .
 
 ```
-/g/data/hr22/bin/gadi-cylc-setup-ps
+/g/data/hr22/bin/gadi-cylc-setup-ps -y
 ```
 
 After it, check the existence of the following 3 files under ~/.ssh directory
@@ -131,23 +156,7 @@ You only need to execute the above initialization step once.
 
 Note: This initialization step is not required if you are running a Cylc7 suite in 'localhost' mode.
 
-## Step 4: verify your MOSRS account information
-
-To enable access to the MOSRS, please execute the following command
-
-```
-mosrs-auth
-```
-
-## Step 5: checkout the test suite u-da543 if you haven't done it.
-
-You can now check out the 'u-da543' test suite by using the 'rosie co' command if the suite does not already exist.
-
-```
- rosie co u-da543
-```
-
-## Step 6: execute suite u-da543
+## Step 6: re-run the suite u-da543 
 
 The suite will be stored in the directory ~/roses/u-da543. You can execute it using the 'rose suite-run' command. Prior to initiating a new run, ensure you clean it by using the 'rose suite-clean' command.
 
