@@ -1,4 +1,4 @@
-# Guideline on setting up Cylc8 working environment
+# Guidelines for Establishing a Cylc 8 Working Environment on Gadi
 
 The purpose of this file is to configure your working environment on NCI's Gadi system for running the Clyc8 workflow.
 You could start a Cylc 8 workflow on Gadi login node but you need an ARE VDI session to monitor the job progress.
