@@ -1,4 +1,4 @@
-# Guideline on setting up Cylc 7 working environment at Gadi
+# Guidelines for Establishing a Cylc 7 Working Environment on Gadi
 
 This file is intended to configure your working environment on NCI Gadi for running the Cylc7 workflow in both localhost and accessdev-compatible modes. You could start your Cylc7 workflow from either a Gadi login node or a persistent session and leave it running at the persistent session. You could monitor Cylc 7 workflows anytime from a Gadi login node when it is still running.
 
