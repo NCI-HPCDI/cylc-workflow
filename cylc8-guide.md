@@ -58,7 +58,7 @@ To enable access to the MOSRS, please execute the following command ( providing 
 mosrs-auth
 ```
 
-## Step 5: checkout the test suite u-cz535
+## Step 5: check out the test suite u-cz535
 
 Now you can check out the test suite u-cz543 using the 'rosie co' command
 
