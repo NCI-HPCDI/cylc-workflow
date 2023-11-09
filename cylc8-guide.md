@@ -70,6 +70,8 @@ The suite runs the following tasks:
 1. Cloning the source code of 'stream' by using the 'localhost' platform;
 2. Building the 'stream' package  by using the 'pbs' platform;
 3. Executing the 'stream' package  by using the 'pbs' platform;
+
+For a Cylc8 suite, you only need these two platforms, i.e. "localhost" for background jobs, and "pbs" to submit jobs to the HPC queue system.
     
 ## Step 6: execute the test suite u-cz535
 
@@ -83,11 +85,16 @@ cylc play u-cz535
 
 ## Step 7: Monitor the job progress
 
-You can only monitor the cylc8 workflow via an ARE VDI session.
+You can monitor the Cylc8 workflow from the command line with the commmand
+```
+cylc tui
+``` 
 
-Run the following command in ARE VDI which will open a web browser window"
+You could choose a better way to monitor a Cylc8 suite progress by running the following commands from a ARE VDI session
 
 ```
+module use /g/data/hr22/modulefiles
+module load cylc/8.2.1
 cylc gui
 ```
 Make sure all jobs can complete successfully.
