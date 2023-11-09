@@ -53,7 +53,7 @@ id_rsa-rose-cylc-gadi.pub
 
 ## Step 4: verify your MOSRS account information
 
-To enable access to the MOSRS, please execute the following command
+To enable access to the MOSRS, please execute the following command ( providing you alreay have a MOSRS account)
 ```
 mosrs-auth
 ```
